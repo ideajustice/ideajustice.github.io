@@ -20,31 +20,103 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+
+		<style>
+		  .navbar { 
+		       overflow: hidden;
+		       background-color: white;
+		       font-weight: 200;
+		       }
+		  .navbar a {
+		       float: left;
+		       color: #555f66;
+		       text-align: center;
+		       font-weight: 200;
+		       text-decoration: none;
+		       }
+		  .navbar a:hover, .dropdown:hover .dropbtn {
+		       background-color: #555f66;
+		       color: white;
+		       font-weight: 200;
+		       }
+		  .navbar-right {
+		       float: right;
+		       }
+
+		  .dropdown {
+		       float: left;
+		       overflow: hidden;
+		       }
+		  .dropdown .dropbtn {
+		       border: none;
+		       outline: none;
+		       color: #555f66;
+		       margin-top: 13.5px;
+		       font-weight: 200;
+		       }
+		  .dropdown-content {
+		       display: none;
+		       position: absolute;
+		       z-index: 1;
+		       background-color: white;
+		       }
+		  .dropdown-content a {
+		       float: none;
+		       color: #555f66;
+		       text-decoration: none;
+		       display: block;
+		       text-align: left;
+		       } 
+		  .dropdown-content a:hover {
+		       background-color: #555f66;
+		       color: white;
+		       }
+		  .dropdown:hover .dropdown-content {
+		       display: block;
+		       }
+
+		</style>
+
 	</head>
 	<body id="top">
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
 				<h1><a href="#">IDEA</a></h1>
-				<nav id="nav">
-				  <ul>
-				    <li><a href="#">Home</a></li>
-				    <li><a href="#about">About Us</a></li>
-				    <li><a href="#resources">Resources</a></li>
-				    <li>
-				      <a href="#petition">Our Petition</a>
-				    </li>
+				<div class="navbar">
+				  <div class="navbar-right">
+
+				    <a href="#">Home</a>
+				    <a href="#about">About Us</a>
+				    <a href="#resources">Resources</a>
 				    
-				    <li><a href="#meeting">Meeting Notes</a></li> 
-				  </ul>
-				</nav>
+				    <div class="dropdown">
+				      <button class="dropbtn">Our Petition
+				      </button>
+				      <div class="dropdown-content">
+					<a href="#petition">Author's Note</a>
+					<a href="petition.html">Read the Petition</a>
+				      </div>
+				    </div> 				    
+				    
+				    <div class="dropdown">
+				      <button class="dropbtn">Meeting Notes
+				      </button>
+				      <div class="dropdown-content">
+					<a href="#meeting">Recent</a>
+					<a href="meetings.html">Archive</a>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
 			</header>
 
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					<h2>I.D.E.A.</h2>
-					<p>Inclusion, Diversity, and Equity in Astronomy</p>
+					<p>Inclusion, Diversity, and Equity in Astronomy @ UChicago</p>
 <!--					<ul class="actions">
 						<li><a href="#elements" class="button big alt">Learn More</a></li>
 					</ul> -->

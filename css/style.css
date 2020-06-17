@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Roboto:500,300");
+@import 'tippy.js/dist/tippy.css';
+@import 'tippy.js/themes/light-border.css';
 
 /*
 	Ion by TEMPLATED
@@ -757,6 +759,7 @@
 		input[type="button"].small,
 		.button.small {
 			font-size: 0.7em;
+			font-weight: normal;
 		}
 
 		input[type="submit"].big,
@@ -766,6 +769,7 @@
 			font-size: 1.2em;
 			height: 2.65em;
 			line-height: 2.65em;
+			font-weight: normal;
 		}
 
 		input[type="submit"].alt,
@@ -804,6 +808,7 @@
 		.button.special {
 			background-color: #629DD1;
 			color: #ffffff !important;
+			font-weight: normal;
 		}
 
 			input[type="submit"].special:hover,
@@ -832,6 +837,7 @@
 			color: #fff !important;
 			cursor: default;
 			opacity: 0.25;
+			font-weight: normal;
 		}
 
 /* Wrapper */
@@ -905,6 +911,7 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
+			margin-top: 13.5px;
 		}
 
 			#header h1 a {
@@ -946,10 +953,6 @@
 						text-decoration: none;
 					}
 
-						#header nav > ul > li a:hover {
-							color: #629DD1;
-						}
-
 					#header nav > ul > li:first-child {
 						margin-left: 0;
 					}
@@ -963,6 +966,8 @@
 						top: -0.075em;
 						vertical-align: middle;
 					}
+
+
 
 		#header .container {
 			position: relative;
